@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/virtual-lab/', // <-- Tambahkan baris ini agar file assets terbaca di GitHub Pages
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
