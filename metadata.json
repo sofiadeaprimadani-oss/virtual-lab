@@ -1,0 +1,8 @@
+{
+  "name": "Virtual Trainer Inverter & Rectifier",
+  "description": "Virtual laboratory simulator for power electronics trainer board (Inverter & Rectifier) with interactive banana plug wiring, AC transformer, half/full-wave rectifiers, LC filters, DC supply, digital meters, and oscilloscope.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
