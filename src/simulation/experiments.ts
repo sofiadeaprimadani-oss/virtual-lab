@@ -1,5 +1,7 @@
 import { Wire } from './circuitLogic';
 
+const assetBase = import.meta.env?.BASE_URL ?? '/';
+
 export interface ExperimentProcedureSection {
   sectionTitle?: string;
   steps: string[];
@@ -111,7 +113,7 @@ export const EXPERIMENTS: Experiment[] = [
       'Rancanglah skema filter bertingkat regulator aktif tambahan agar tegangan output stabil 0 ripple pada beban berapapun.',
     ],
     pdfFileName: 'HALF_WAVE_d8b41077.pdf',
-    pdfDownloadPath: '/assets/aistudio/HALF_WAVE_d8b41077.pdf',
+    pdfDownloadPath: `${assetBase}assets/aistudio/HALF_WAVE_d8b41077.pdf`,
     wires: [
       { id: 'w_js1_1', from: 'socket_ac_0', to: 'trafo_pri_0', color: 'black' },
       { id: 'w_js1_2', from: 'socket_ac_220', to: 'trafo_pri_220', color: 'red' },
@@ -204,7 +206,7 @@ export const EXPERIMENTS: Experiment[] = [
       'Rancanglah sebuah skema filter bertingkat Pi-Filter (C-L-C) menggunakan komponen trainer ini.',
     ],
     pdfFileName: 'FULL_WAVE_6159227f.pdf',
-    pdfDownloadPath: '/assets/aistudio/FULL_WAVE_6159227f.pdf',
+    pdfDownloadPath: `${assetBase}assets/aistudio/FULL_WAVE_6159227f.pdf`,
     wires: [
       { id: 'w_js2_1', from: 'socket_ac_0', to: 'trafo_pri_0', color: 'black' },
       { id: 'w_js2_2', from: 'socket_ac_220', to: 'trafo_pri_220', color: 'red' },
@@ -280,7 +282,7 @@ export const EXPERIMENTS: Experiment[] = [
       'Rancanglah sebuah sistem umpan balik (feedback loop) teoritis menggunakan mikrokontroler (misal ESP32) untuk mengatur PWM pada basis transistor!',
     ],
     pdfFileName: 'TRANS_NPN_2ed83184.pdf',
-    pdfDownloadPath: '/assets/aistudio/TRANS_NPN_2ed83184.pdf',
+    pdfDownloadPath: `${assetBase}assets/aistudio/TRANS_NPN_2ed83184.pdf`,
     wires: [
       // 1. DC 12V ke CT (+) dan Emitor NPN (-)
       { id: 'w_js3_1', from: 'ps_dc12_pos', to: 'trafo_ct', color: 'red' },
@@ -365,7 +367,7 @@ export const EXPERIMENTS: Experiment[] = [
       'Rancanglah skema topologi Full-Bridge Inverter (H-Bridge tanpa trafo CT) yang mengombinasikan 2 NPN dan 2 PNP serta jelaskan proteksi Dead-Time.',
     ],
     pdfFileName: 'TRANS_PNP_04a81c58.pdf',
-    pdfDownloadPath: '/assets/aistudio/TRANS_PNP_04a81c58.pdf',
+    pdfDownloadPath: `${assetBase}assets/aistudio/TRANS_PNP_04a81c58.pdf`,
     wires: [
       // 1. DC 12V ke Emitor PNP (+) dan CT (-)
       { id: 'w_js4_1', from: 'ps_dc12_pos', to: 'inv_pnp1_e', color: 'red' },
